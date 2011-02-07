@@ -12,7 +12,8 @@ ul {
 }
 
 li {
-  padding-bottom: 5px;
+  padding-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 li.current:before {
