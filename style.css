@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+body {
+  min-width: 450px;
+  margin-right: 16px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+li.current:before {
+  color: green;
+  content: "→";
+}
+
+li:hover {
+  background-color: #a8efaf;
+}
+
+img.favicon {
+  vertical-align: text-top;
+  width: 16px;
+  height: 16px;
+  padding-right: 2px;
+}
+
+span.title {
+  vertical-align: text-top;
+  font-size: 16px;
+}
+
