@@ -1,4 +1,4 @@
-function movetab() {
+function moveTab() {
   var tabId = parseInt(this.id.substring(1), 10);
   chrome.tabs.update(tabId, {"selected":true});
 }
@@ -30,7 +30,7 @@ window.onload = function() {
       li.setAttribute("title", tabs[i].url);
       li.appendChild(favicon);
       li.appendChild(title);
-      li.addEventListener("click", movetab, false);
+      li.addEventListener("click", moveTab, false);
 
       ul.appendChild(li);
     }
