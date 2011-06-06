@@ -10,6 +10,7 @@ window.onload = function() {
   });
 
   var ul = document.querySelector("ul");
+  var fragment = document.createDocumentFragment();
 
   chrome.tabs.getAllInWindow(null, function(tabs) {
     for (var i = 0; i < tabs.length; i++) {
@@ -32,7 +33,8 @@ window.onload = function() {
       li.appendChild(title);
       li.addEventListener("click", moveTab, false);
 
-      ul.appendChild(li);
+      fragment.appendChild(li);
     }
+    ul.appendChild(fragment);
   });
 };
