@@ -22,7 +22,7 @@ window.onload = function() {
       favicon.setAttribute("src", tabs[i].favIconUrl);
 
       title.setAttribute("class", "title");
-      title.innerText = tabs[i].title;
+      title.appendChild(document.createTextNode(tabs[i].title));
 
       if (currentTab.id === tabs[i].id) {
         li.setAttribute("class", "current");
