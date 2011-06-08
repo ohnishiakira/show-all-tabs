@@ -5,12 +5,12 @@ function moveTab() {
 
 window.onload = function() {
   var currentTab = null;
+  var ul = document.querySelector("ul");
+  var fragment = document.createDocumentFragment();
+
   chrome.tabs.getSelected(null, function(tab) {
     currentTab = tab;
   });
-
-  var ul = document.querySelector("ul");
-  var fragment = document.createDocumentFragment();
 
   chrome.tabs.getAllInWindow(null, function(tabs) {
     for (var i = 0; i < tabs.length; i++) {
