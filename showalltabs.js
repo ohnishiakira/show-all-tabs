@@ -1,6 +1,6 @@
 function moveTab() {
   var tabId = parseInt(this.id.substring(1), 10);
-  chrome.tabs.update(tabId, {"selected":true});
+  chrome.tabs.update(tabId, {"selected": true});
 }
 
 window.onload = function() {
