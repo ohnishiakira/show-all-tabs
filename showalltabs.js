@@ -13,7 +13,7 @@ window.onload = function() {
   });
 
   chrome.tabs.getAllInWindow(null, function(tabs) {
-    for (var i = 0; i < tabs.length; i++) {
+    for (var i = 0, l = tabs.length; i < l; i++) {
       var li = document.createElement("li");
       var favicon = document.createElement("img");
       var title = document.createElement("span");
@@ -24,7 +24,7 @@ window.onload = function() {
       title.setAttribute("class", "title");
       title.innerText = tabs[i].title;
 
-      if (currentTab.url === tabs[i].url) {
+      if (currentTab.id === tabs[i].id) {
         li.setAttribute("class", "current");
       }
       li.setAttribute("id", "t" + tabs[i].id);
