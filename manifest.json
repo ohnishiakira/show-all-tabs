@@ -7,5 +7,7 @@
     "default_title": "Show All Tabs",
     "popup": "popup.html"
   },
-  "permissions": [ "tabs" ]
+  "permissions": [
+    "tabs"
+  ]
 }
