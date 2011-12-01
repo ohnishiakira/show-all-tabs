@@ -14,6 +14,7 @@ ul {
 li {
   padding-bottom: 2px;
   margin-bottom: 3px;
+  border: solid 1px #ffffff;
 }
 
 li.current {
@@ -21,7 +22,8 @@ li.current {
 }
 
 li:hover {
-  background-color: #a8efaf;
+  cursor: pointer;
+  border: solid 1px green;
 }
 
 img.favicon {
