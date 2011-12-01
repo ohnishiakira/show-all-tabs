@@ -16,9 +16,8 @@ li {
   margin-bottom: 3px;
 }
 
-li.current:before {
-  color: green;
-  content: "→";
+li.current {
+  background-color: #a8efaf;
 }
 
 li:hover {
