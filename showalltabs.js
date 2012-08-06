@@ -11,13 +11,13 @@ window.onload = function() {
   });
 
   chrome.tabs.getAllInWindow(null, function(tabs) {
-    var ul = document.querySelector("ul");
+    var ul       = document.querySelector("ul");
     var fragment = document.createDocumentFragment();
 
     for (var i = 0, l = tabs.length; i < l; i++) {
-      var li = document.createElement("li");
+      var li      = document.createElement("li");
       var favicon = document.createElement("img");
-      var title = document.createElement("span");
+      var title   = document.createElement("span");
 
       favicon.setAttribute("class", "favicon");
       favicon.setAttribute("src", tabs[i].favIconUrl);
