@@ -5,14 +5,15 @@ function moveTab() {
 
 window.onload = function() {
   var currentTab = null;
-  var ul = document.querySelector("ul");
-  var fragment = document.createDocumentFragment();
 
   chrome.tabs.getSelected(null, function(tab) {
     currentTab = tab;
   });
 
   chrome.tabs.getAllInWindow(null, function(tabs) {
+    var ul = document.querySelector("ul");
+    var fragment = document.createDocumentFragment();
+
     for (var i = 0, l = tabs.length; i < l; i++) {
       var li = document.createElement("li");
       var favicon = document.createElement("img");
