@@ -33,6 +33,11 @@ img.favicon {
   padding-right: 2px;
 }
 
+span.title {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
 /* span.title {
   vertical-align: text-top;
   font-size: 16px;
